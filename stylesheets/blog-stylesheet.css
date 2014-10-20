@@ -1,0 +1,25 @@
+
+#header{
+    border: 1px solid blue;
+}
+#header li {
+    display: inline;
+    border: 2px solid blue;
+    padding: 10px;
+
+}
+ 
+#content {
+    background-color: gray;
+    margin : 60px;
+    padding: 20px;
+}
+
+#footer {
+    border: 1px solid blue;    
+}
+#footer li {
+    display: inline;
+    border: 2px solid blue;
+    padding: 10px;
+}
