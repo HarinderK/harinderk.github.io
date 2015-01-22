@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+		<title>My_blog</title>
+	</head>
+	<body>
+	<div id="header"> 
+	    <ul>
+	        <li>Name</li>
+	        <li>About me</li>
+	        <li>Projects</li>
+	    </ul>
+	</div>
+	<div id="content"> 
+	<h3>Enumerable Method : #map</h3>
+	    <p>
+	    	In addition to classes, ruby has something called modules. Modules are containers for methods and constants. Through modules you have to write your code only once and share it between different classes. Enumerable is one such module.  It provides a set of methods to traverse, search, sort and manipulate collections.</p>
+
+			<p>You can checkout all the methods provided by this module by using instance_methods method (Enumerable.instance_methods.sort). One such method we are going to dive into today is #map, also sometimes known as collect. You can think of this method as doing something and collecting the result.  Map always returns a new array filled with changes (whatever gets returned by the block each time it runs). </p>
+
+			<p>For example, lets say we have an array of integers:</p>
+
+				<p>		array = [2,4,6,8,10] </p>
+				<p>		array.map {|x| x**2} </p>
+				<p>	=> [4,16,36,64,100]      </p>
+
+			<p> If you want to change your orignal array, you can you map!</p>
+	</div>
+	<div id="footer">
+	    <ul>
+	        <li>Previous links</li>
+	        <li>Contact</li>
+	    </ul>
+	</div>
+	</body>
+</html>
