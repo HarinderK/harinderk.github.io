@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+		<title>My_blog</title>
+	</head>
+	<body>
+	<div id="header"> 
+	    <ul>
+	        <li>Name</li>
+	        <li>About me</li>
+	        <li>Projects</li>
+	    </ul>
+	</div>
+	<div id="content"> 
+	<h3>Ruby Classes</h3>
+	    <p>
+	We have had some experience with Ruby objects (integer, float, string, array etc.). The behavior and attributes of these objects are already defined in Ruby. But what if we want to create our very own object with particular attributes.  Let’s say I want ruby to recognize ‘Dog’ as an object as well. Just like we do with other objects like array, I want the similar functionality. </p>
+
+	<p>It is possible to create your very own object in ruby using Classes. If I want to create a general Dog class, with attributes like name, age and breed, I can do so like this:</p>
+
+		<p>class Dog (name, age, breed)</p>
+		<p>@name = name</p>
+		<p>@age = age</p>
+		<p>@breed = breed</p>
+		<p>end<p>
+
+
+	<p>Now when I want to use Dog as an object, I can do so like this:</p>
+
+	<p>my_dog = Dog.new(“Max”, 3, “Lab”)</p>
+
+	<p>The variables, like @name, are called Instance variables. Now we have our very own defined object, but there isn’t much it can do. We can make it even more useful by adding instance methods. For example, lets add instance method to our class:</p>
+
+	<p>def isPuppy?</p>
+
+		<p>if @age <=1</p>
+		<p>return true</p>
+		<p>else return false</p>
+		<p>end</p>
+	<p>end</p>
+
+	<p>If I run my_dog.isPuppy?, it will return false. </p>
+
+	</div>
+	<div id="footer">
+	    <ul>
+	        <li>Previous links</li>
+	        <li>Contact</li>
+	    </ul>
+	</div>
+	</body>
+</html>
