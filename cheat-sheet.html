@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+    <title>My_blog</title>
+  </head>
+<body>
+  <section id="">
+    <div>
+        <h1>Ruby Enumerable</h1>
+        <h3>When we want to iterate objects like Arrays and Hashes, we implement Enumerable method. It is like passing each element of the object to a block a code. For example, we can manuniplate object by iterating, mapping and searching by using enumerbale module.</h3>
+    </div>
+    <div>
+     <ul>
+         <li> each </li>
+         <p> <pre>
+             <code>
+                arr = [1,2,3,5]
+                arr.each {|x| p x*2 }
+                #=> 2
+                    4
+                    6
+                    10
+             </code>
+             </pre>
+             This method goes through each element of an array , 'arr' and p's out the element times 2. This does not change the original array.
+
+         </p>
+         <li> map </li>
+         <p> <pre>
+             <code>
+                array.map  {|x| x*2}
+                => [2, 4, 6, 10]
+
+                 array.map!  {|x| x*2}
+                 => [2, 4, 6, 10]
+             </code>
+             </pre>
+             The map method goes throught each element of an array and map a new array using those elements. But it doesn't change the original array.
+             The map!(a distructive method) changes the original array.
+
+
+         </p>
+
+
+         <li> all? </li>
+         <p> <pre>
+             <code>
+                arr = [2,4,6]
+                arr.all? { |x| x.even? }
+                #=> true
+
+                arr.all? { |x| x%3 == 0 }
+                #=> false
+
+                arr.all?
+                #=> false
+             </code>
+             </pre>
+           This method returns a boolean value. It returns true if the codition in the block holds true for all elements of the object. And it returns false if the condition is not true for any element in the object.
+         </p>
+         <li> any? </li>
+             <p> <pre>
+             <code>
+                arr = [2,4,6]
+                arr.any? { |x| x.even? }
+                #=> true
+
+                arr.any? { |x| x%3 == 0 }
+                #=> true
+
+                arr.any?
+                #=> true
+             </code>
+             </pre>
+         <li> collect </li>
+        </ul>
+      </div>
+
+
+
+  </section>
+
+</body>
+
+
+
+
+
+
+  </html>
